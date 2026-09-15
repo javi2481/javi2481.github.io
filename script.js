@@ -1,8 +1,9 @@
 const COPY = {
   es: {
     skip: "Saltar al trabajo",
-    kicker: "AI Engineer",
-    place: "Argentina · UTC−3",
+    running: "expediente · document AI",
+    kicker: "Applied AI · Document AI",
+    place: "Santa Fe, Argentina · UTC−3",
     themeDark: "Tinta",
     themeLight: "Papel",
     aboutLabel: "Perfil",
@@ -10,10 +11,10 @@ const COPY = {
     principle: "Principio: el LLM orquesta; el código determinístico decide.",
     workLabel: "Trabajo destacado",
     pSupply:
-      "Reabastecimiento conversacional sobre un catálogo estructurado. El modelo interpreta; Python calcula cuánto pedir.",
+      "Reabastecimiento conversacional sobre un catálogo estructurado. El LLM interpreta; Python es dueño de la cantidad. Goldens en CI.",
     pTimonel:
       "Detectores PaddleX (objetos, caras, pose, vehículos) sobre una sola foto. Encendés capas y ves qué aporta cada una.",
-    pLex: "SPA de OCR académico: subís imagen, inferís, editás texto espacial y exportás JSON, Markdown, CSV o PNG anotado.",
+    pLex: "SPA de OCR académico con PP-OCRv6: cajas espaciales, edición, export JSON, Markdown, CSV o PNG anotado.",
     pClaim:
       "Kernel de claims intelligence. Instancia publicada: balances BYMA. Las claims tipadas son la fuente de verdad; el chat RAG es opcional.",
     pAmanuense:
@@ -27,8 +28,9 @@ const COPY = {
   },
   en: {
     skip: "Skip to work",
-    kicker: "AI Engineer",
-    place: "Argentina · UTC−3",
+    running: "case file · document AI",
+    kicker: "Applied AI · Document AI",
+    place: "Santa Fe, Argentina · UTC−3",
     themeDark: "Ink",
     themeLight: "Paper",
     aboutLabel: "Profile",
@@ -36,10 +38,10 @@ const COPY = {
     principle: "Principle: the LLM orchestrates; deterministic code decides.",
     workLabel: "Featured work",
     pSupply:
-      "Conversational replenishment over a structured catalog. The model interprets; Python computes how much to order.",
+      "Conversational replenishment over a structured catalog. The LLM interprets; Python owns the order quantity. Goldens in CI.",
     pTimonel:
       "PaddleX detectors (objects, faces, pose, vehicles) over a single photo. Toggle layers and see what each adds.",
-    pLex: "Academic OCR SPA: upload an image, infer, edit spatial text, export JSON, Markdown, CSV, or annotated PNG.",
+    pLex: "Academic OCR SPA with PP-OCRv6: spatial boxes, edit, export JSON, Markdown, CSV, or annotated PNG.",
     pClaim:
       "Claims intelligence kernel. Shipped instance: BYMA financial statements. Typed claims are the source of truth; RAG chat is optional.",
     pAmanuense:
@@ -54,12 +56,12 @@ const COPY = {
 };
 
 const META = {
-  es: "AI Engineer orientado a document AI y visión. OCR espacial, orquestación de detectores, extracción estructurada. Background en pharma y retail. Argentina.",
-  en: "AI Engineer focused on document AI and vision: spatial OCR, detector orchestration, structured extraction. Pharma and retail background. Argentina.",
+  es: "Applied AI · Document AI / OCR. OCR espacial, orquestación de detectores, extracción estructurada. Background en pharma y retail. Argentina.",
+  en: "Applied AI · Document AI / OCR. Spatial OCR, detector orchestration, structured extraction. Pharma and retail background. Argentina.",
 };
 
 function applyLang(lang) {
-  const pack = COPY[lang] || COPY.es;
+  const pack = COPY[lang] || COPY.en;
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
@@ -70,7 +72,7 @@ function applyLang(lang) {
   document.querySelectorAll("[data-lang]").forEach((btn) => {
     btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
   });
-  localStorage.setItem("site-lang", lang);
+  localStorage.setItem("site-lang-v2", lang);
 }
 
 function applyTheme(theme) {
@@ -84,7 +86,7 @@ function applyTheme(theme) {
   localStorage.setItem("site-theme", theme);
 }
 
-const savedLang = localStorage.getItem("site-lang") || "es";
+const savedLang = localStorage.getItem("site-lang-v2") || "en";
 const savedTheme = localStorage.getItem("site-theme") || "dark";
 applyLang(savedLang);
 applyTheme(savedTheme);

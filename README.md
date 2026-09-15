@@ -1,7 +1,7 @@
 # javi2481.github.io
 
-Sitio personal en [GitHub Pages](https://javi2481.github.io/).
+Personal site on [GitHub Pages](https://javi2481.github.io/). English by default; ES toggle in the rail.
 
-El contenido sigue el [perfil de GitHub](https://github.com/javi2481) y los repos pineados: SupplyMate, Timonel, LexOCR, claimprint y Amanuense.
+Content follows the [GitHub profile](https://github.com/javi2481) and pinned repos: SupplyMate, Timonel, LexOCR, claimprint, Amanuense.
 
-Sitio estático (HTML/CSS/JS). Idioma ES/EN y tema tinta/papel se guardan en `localStorage`.
+Static HTML/CSS/JS. Language and ink/paper theme persist in `localStorage`.
