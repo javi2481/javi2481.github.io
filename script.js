@@ -22,7 +22,7 @@ const COPY = {
     pAmanuense:
       "Demo local: PDF o imagen a Markdown con VLMs vía Hugging Face Inference Providers, más comparación A/B.",
     bgLabel: "Recorrido",
-    bg1: "15 años en una distribuidora de medicamentos de Argentina, en distintas áreas del negocio: dato operativo (SKU, lotes, stock, facturas) y canal farmacias. Análisis y proyectos de ML sobre ese dominio — no sobre datasets genéricos.",
+    bg1: "16 años en una distribuidora de medicamentos de Argentina, en distintas áreas del negocio: dato operativo (SKU, lotes, stock, facturas) y canal farmacias. Análisis y proyectos de ML sobre ese dominio — no sobre datasets genéricos.",
     bg2: "Proyectos y prototipos propios de IA aplicada: SupplyMate, claimprint, Timonel, LexOCR y Amanuense.",
     bg3: "Egreso previsto de la Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial, ISTEA (título oficial, Argentina).",
     skillsLabel: "En los proyectos",
@@ -51,7 +51,7 @@ const COPY = {
     pAmanuense:
       "Local demo: PDF or image to Markdown with VLMs via Hugging Face Inference Providers, plus A/B comparison.",
     bgLabel: "Background",
-    bg1: "15 years at a pharmaceutical distributor in Argentina, across several areas of the business: operational data (SKU, lots, stock, invoices) and the pharmacy channel. Analysis and ML projects on that domain — not generic datasets.",
+    bg1: "16 years at a pharmaceutical distributor in Argentina, across several areas of the business: operational data (SKU, lots, stock, invoices) and the pharmacy channel. Analysis and ML projects on that domain — not generic datasets.",
     bg2: "Own applied-AI projects and prototypes: SupplyMate, claimprint, Timonel, LexOCR, and Amanuense.",
     bg3: "Expected graduation from the Tecnicatura Superior in Data Science and Artificial Intelligence at ISTEA (official degree, Argentina).",
     skillsLabel: "Demonstrated in projects",
